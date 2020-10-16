@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+/* Style the header */
+.header {
+  background-image: url(../imagenes/fondo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: middle;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.logo {
+    overflow: hidden;
+}
+
+.logo h2{
+    float: left;
+    color: white;
+}
+/* Change color on hover */
+.topnav a:hover {
+  background-color:dd;
+  color: white;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+.cuentaatras {
+  font-family: "Verdana";
+  padding: 40px;
+  background:#ffffff  ;
+  color: black;
+}
+
+.bienvenidos {
+  font-family: "Verdana";
+  padding: 70px;
+  background:#727274  ;
+  color: black;
+  align-content: right;
+}
+
+.bienvenidos h1{
+  text-align: right;
+}
+
+.bienvenidos p{
+  text-align: right;
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.mssg {
+    padding: 30vh 10%;
+}
+
+.mssg h1{
+  text-align: center;
+  color: white;
+}
+
+.mssg p{
+  text-align: center;
+  color: red;
+}
+
+.row {
+  content: "";
+  font-family: "Verdana";
+  display: table;
+  clear: both;
+  background:#ffffff;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .column2 {
+    width: 100%;
+  }
+}
+
