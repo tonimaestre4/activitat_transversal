@@ -23,16 +23,16 @@
         $sentencia->bindParam(7,$sexo);
         $sentencia->execute();
 
-        $query = "INSERT INTO tbl_inscripcion (dni_participante,id_cursa,id_categoria) VALUES (?,'1',?)";
-        $sentencia=$pdo->prepare($query);
+        // $query = "INSERT INTO tbl_inscripcion (dni_participante,id_cursa,id_categoria) VALUES (?,'1',?)";
+        // $sentencia=$pdo->prepare($query);
    
-        //$id_cursa=$_POST['id_cursa'];
-        $dni=$_POST['dni_participante'];
-        $id_categoria=$_POST['id_categoria'];
+        // //$id_cursa=$_POST['id_cursa'];
+        // $dni=$_POST['dni_participante'];
+        // $id_categoria=$_POST['id_categoria'];
 
-        $sentencia->bindParam(1,$dni);
-        $sentencia->bindParam(2,$id_categoria);
-        $sentencia->execute();
+        // $sentencia->bindParam(1,$dni);
+        // $sentencia->bindParam(2,$id_categoria);
+        // $sentencia->execute();
 
         header ('Location:../inscripcion.php');
         $pdo->commit();
