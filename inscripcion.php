@@ -24,15 +24,15 @@
     <section class="form-register">
   <form action="inscripcion/inscribirusuarios.php" method="POST" onsubmit="return validacionForm()">
     <p>Introduce tus datos para registrarte.</p>
-    <input class="controls" type="text" name="dni_participante" placeholder="DNI">
-    <input class="controls" type="text" name="nombre" placeholder="Nombre">
-    <input class="controls" type="text" name="apellido1" placeholder="Apellido paterno">
-    <input class="controls" type="text" name="apellido2" placeholder="Apellido materno">
-    <input class="controls" type="date" name="nacimiento" placeholder="Nacimiento">
-    <input class="controls" type="email" name="email" placeholder="Email">
-    <input class="controls" type="text" name="sexo" placeholder="Sexo">
+    <input class="controls" type="text" name="dni_participante" id="dni_participante" placeholder="DNI">
+    <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre">
+    <input class="controls" type="text" name="apellido1" id="apellido1" placeholder="Apellido paterno">
+    <input class="controls" type="text" name="apellido2" id="apellido2" placeholder="Apellido materno">
+    <input class="controls" type="date" name="nacimiento" id="nacimiento" placeholder="Nacimiento">
+    <input class="controls" type="email" name="email" id="email" placeholder="Email">
+    <input class="controls" type="text" name="sexo" name="sexo" placeholder="Sexo">
     <select class="controls" name="id_categoria">
-    <option value="Todas">Todas</option> 
+    <!-- <option value="Todas">Todas</option>  -->
       <!-- While de valores--> 
       <?php
       require_once 'model/connection.php';

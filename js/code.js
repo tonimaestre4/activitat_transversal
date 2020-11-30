@@ -1,14 +1,13 @@
 function validacionForm() {
 
-    alert('hola');
-    var dni = document.getElementByName('dni_participante').value;
-    var nombre = document.getElementByName('nombre').value;
-    var apellido1 = document.getElementByName('apellido1').value;
-    var apellido2 = document.getElementByName('apellido2').value;
-    var nacimiento = document.getElementByName('nacimiento').value;
-    var email = document.getElementByName('email').value;
-    var sexo = document.getElementByName('sexo').value;
-
+    var dni = document.getElementById('dni_participante').value;
+    var nombre = document.getElementById('nombre').value;
+    var apellido1 = document.getElementById('apellido1').value;
+    var apellido2 = document.getElementById('apellido2').value;
+    var nacimiento = document.getElementById('nacimiento').value;
+    var email = document.getElementById('email').value;
+    var sexo = document.getElementById('sexo').value;
+    
     if (dni == '' || nombre == '' || apellido1 == '' || apellido2 == '' || nacimiento == '' || email == '' || sexo == '') {
 
         //  Todos los campos estan vacios
@@ -16,21 +15,7 @@ function validacionForm() {
 
         return false;
     } else {
+        alert('hola');
         return true;
     }
-}
-
-function validarFor() {
-    var inputs = document.getElementsByTagName("input");
-    for (let i = 0; i < inputs.length++) {
-        if (inputs[i].type == 'text' && inputs[i].value == '') {
-            inputs[i].style.borderColor = 'red';
-            console.log(inputs[i].name);
-        } else {
-            inputs[i].style.borderColor = 'grey';
-        }
-        console.log(inputs[i].type);
-
-    }
-    return false;
-}
+};
